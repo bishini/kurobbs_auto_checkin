@@ -32,7 +32,7 @@ jobs:
         id: run_script  # 给步骤命名，方便后续引用输出
         continue-on-error: true
         env:
-          TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNzQyODY1ODM5MTY5LCJ1c2VySWQiOjIzODkzODI2fQ.HBg2D40bLEgOoUcV4bA90KT8wvWMM_V7T7Hs2f-Yh2g
+          TOKEN: ${{ secrets.TOKEN }}
           DEBUG: ${{ secrets.DEBUG }}
           BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
           BARK_SERVER_URL: ${{ secrets.BARK_SERVER_URL }}
